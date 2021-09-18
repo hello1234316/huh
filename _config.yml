@@ -1,11 +1,2 @@
 theme: jekyll-theme-cayman
 
-~$git clone https://github.com/hello1234316/hello1234316.github.io
-~$cd hello1234316.github.io
-
-~$echo "Hello World" > index.html
-~$git add --all
-
-~$git commit -m "Initial commit"
-
-~$git push -u origin main
