@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="chi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hello Phone</title>
+        <link rel="stylesheet" href="assets/site.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+        <meta name="description" content="Hello Phone個人網站">
+        <meta name="robots" content="nofollow">
+        <link rel="canonical" href="https://hello1234316.github.io/about/">
+        <meta property="og:title" content="Hello phone">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Hello Phone個人網站">
+        <meta property="og:locale" content="chi_HK">
+    </head>
+    <body>
+        <div class="content">
+            <header class="header">
+                <span class="text">
+                    Hello Phone
+                </span>
+            </header>
+
+            <section class="intro">
+                <span class="text">
+                    一個熱愛程式的小伙子
+                </span>
+            </section>
+
+            <main class="links">
+                <div class="link-item">
+                    <img alt="Github" height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
+                    <a aria-label="github-link" href="https://github.com/hello1234316" target="_blank" rel="noopener" class="link-target"></a>
+                </div>
+
+                
+        
+                <div class="link-item">
+                    <img alt="Discord" height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/discord.svg" />
+                    <span class="copy-text">Hello Phone#8377</span>
+                </div>
+
+                <div class="link-item">
+                    <img alt="Discord Server" height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gmail.svg" />
+                    <a aria-label="discord-link" href="https://discord.gg/CNzNZSbkMa" class="link-target"></a>
+                </div>
+            </main>
+
+            <section class="toast-modal">
+                <span class="text">已複製!</span>
+            </section>
+        </div>
+
+        <script src="assets/site.js"></script>
+        <script>
+            var elements = document.getElementsByClassName('link-item');
+            
+            for (var i = 0; i < elements.length; i++)
+                elements[i].addEventListener('click', (event) => {
+                    var target = event.target;
+
+                    if (target.className == "link-target") return; // don't recurse
+
+                    while (target != undefined && target.className != "link-item" && target.nodeName != "BODY")
+                        target = target.parentElement;
+
+                    if (target == undefined || target.nodeName == "BODY") return;
+
+                    handleLinkClick(target);
+                });
+        </script>
+    </body>
+</html>
