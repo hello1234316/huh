@@ -1,8 +1,8 @@
 const typed = new Typed(".typing", {
 strings: [
-"🐧 Verified DIscord Bot Developer", 
-"🐔 Web Development Newbie.", 
-"🌌 Html,Css,Js,Python."
+"🛠|已驗證Discord機器人開發者", 
+"💻|遊戲&網站開發者", 
+"🌌|Html,Css,Js."
 ],
 typeSpeed: 75,
 backSpeed: 50,
