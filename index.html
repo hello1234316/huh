@@ -1,83 +1,39 @@
 <!DOCTYPE html>
-<html lang="chi">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Hello Phone</title>
-        <link rel="stylesheet" href="assets/site.css" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
-        <meta name="description" content="Hello Phone個人網站">
-        <meta name="robots" content="nofollow">
-        <link rel="canonical" href="https://hello1234316.github.io/about/">
-        <meta property="og:title" content="Hello phone">
-        <meta property="og:type" content="website">
-        <meta property="og:description" content="Hello Phone個人網站">
-        <meta property="og:locale" content="chi_HK">
-        <link rel="icon" type="image/x-icon" href="favicon.ico"/>
-    </head>
-    <body>
-        <div class="content">
-            <header class="header">
-                <span class="text">
-                    Hello Phone
-                </span>
-            </header>
-
-            <section class="intro">
-                <span class="text">
-                    一個熱愛程式的小伙子
-                </span>
-            </section>
-
-            <main class="links">
-                <div class="link-item">
-                    <img alt="Github" height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
-                    <a aria-label="github-link" href="https://github.com/hello1234316" target="_blank" rel="noopener" class="link-target"></a>
-                </div>
-
-                 <body>
- 
-                <div class="link-item">
-                    <img alt="Discord" height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/discord.svg" />
-                    <span class="copy-text">Hello Phone#8377</span>
-                </div>
-                       <body>
-    <p><a href="https://hello1234316.github.io/work/" style="color: #8ebf42">我的作品</a>.</p>
-  </body>
-                <div class="link-item">
-                    <img alt="Discord server" height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/discord.svg" />
-                    <a aria-label="discord-server-link" href="https://discord.gg/CNzNZSbkMa" target="_blank" rel="noopener" class="link-target"></a>
-                </div>
-            </main>
-
-            <section class="toast-modal">
-                <span class="text">已複製!</span>
-            </section>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Phone</title>
+    <link rel="icon" href="doggo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <div class="intro">
+        <img src="doggo.png" alt="logo" onclick="alert('awa')" width="256" height="256">
+        <h1>Hello Phone</h1>
+        <h3>
+             
+            <span class="typing text-center"></span>
+        </h3>
+        <br>
+        <div class="text">
+            <p>可以在discord上找我喔</p>  
+    </div>
+    <div class="social-icons">
+            <a href="https://discord.gg/CNzNZSbkMa" target="_blank">
+                <i class="material-icons social-icon">discord</i>
+            </a>
+            <a href="https://github.com/hello1234316" target="_blank">
+                <i class="material-icons social-icon">code</i>                            
+            </a>
+            
         </div>
-            
-            <iframe src="https://discord.com/widget?id=808945802100736050&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-             <body>
- 
-                 <body>
- 
-        <script src="assets/site.js"></script>
-        <script>
-            var elements = document.getElementsByClassName('link-item');
-            
-            for (var i = 0; i < elements.length; i++)
-                elements[i].addEventListener('click', (event) => {
-                    var target = event.target;
-
-                    if (target.className == "link-target") return; // don't recurse
-
-                    while (target != undefined && target.className != "link-item" && target.nodeName != "BODY")
-                        target = target.parentElement;
-
-                    if (target == undefined || target.nodeName == "BODY") return;
-
-                    handleLinkClick(target);
-                });
-        </script>
-    </body>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>avascript"></script>
+</body>
 </html>
-
