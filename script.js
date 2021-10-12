@@ -7,5 +7,3 @@ strings: [
 typeSpeed: 75,
 backSpeed: 50,
 });
-0,
-});
